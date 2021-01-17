@@ -14,3 +14,5 @@ jobs:
         #   url: https://lychee-crisp-99897.herokuapp.com/info
         #   max-attempts: 3
         #   retry-delay: 5s
+        # 
+        # Commented because of limited free dynos
