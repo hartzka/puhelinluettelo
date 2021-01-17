@@ -8,15 +8,15 @@ on:
     branches: [master]
     types: [opened, synchronize]
 
-#jobs:
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-      # - uses: actions/checkout@v2
-      # - uses: akhileshns/heroku-deploy@v3.8.9
-      #   with:
-      #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-      #     heroku_app_name: "lychee-crisp-99897"
-      #     heroku_email: "kai.hartzell@gmail.com"
-      #     healthcheck: "https://lychee-crisp-99897.herokuapp.com/info"
-      #     rollbackonhealthcheckfailed: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.8.9
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "lychee-crisp-99897"
+          heroku_email: "kai.hartzell@gmail.com"
+          healthcheck: "https://lychee-crisp-99897.herokuapp.com/info"
+          rollbackonhealthcheckfailed: true
