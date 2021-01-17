@@ -166,7 +166,7 @@ const App = () => {
         addPerson={addPerson}
       />
 
-      <h2>Numbers</h2>
+      <h2>Contacts</h2>
 
       <Persons 
       persons={personsToShow}
