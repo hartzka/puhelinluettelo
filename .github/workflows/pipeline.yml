@@ -23,7 +23,7 @@ jobs:
       - name: test
         run: npm test
       - name: build ui
-        run: npm install react-scripts && npm run build:ui
+        run: npm install react-scripts && npm install react && npm run build:ui
       - name: Bump version and push tag
         if: ${{ !contains(join(toJson(github.event.commits.*.message)), '#skip') && github.event_name == 'push' }}
         uses: anothrNick/github-tag-action@eca2b69f9e2c24be7decccd0f15fdb1ea5906598
