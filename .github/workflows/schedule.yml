@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v1.2
-        with:
-          url: https://lychee-crisp-99897.herokuapp.com/info
-          max-attempts: 3
-          retry-delay: 5s
+        # with:
+        #   url: https://lychee-crisp-99897.herokuapp.com/info
+        #   max-attempts: 3
+        #   retry-delay: 5s
