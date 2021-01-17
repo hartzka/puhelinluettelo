@@ -22,6 +22,7 @@ jobs:
         run: npm run lint
       - name: test
         run: npm test
+      - uses: actions/checkout@v2
       - name: build ui
         run: npm run build:ui
       - name: Bump version and push tag
