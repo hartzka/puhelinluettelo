@@ -13,10 +13,10 @@
     "react-scripts": "^3.4.4"
   },
   "scripts": {
-    "start": "yarn start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "yarn test",
-    "eject": "yarn eject",
+    "test": "npm test",
+    "eject": "npm eject",
     "server": "json-server -p3001 --watch db.json"
   },
   "eslintConfig": {
