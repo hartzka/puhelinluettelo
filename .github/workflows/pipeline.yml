@@ -34,6 +34,7 @@ jobs:
           heroku_email: "kai.hartzell@gmail.com"
           healthcheck: "https://lychee-crisp-99897.herokuapp.com/info"
           rollbackonhealthcheckfailed: true
+      - uses: actions/checkout@v2
       - name: Bump version and push tag
         if: ${{ !contains(join(toJson(github.event.commits.*.message)), '#skip') && github.event_name == 'push' }}
         uses: anothrNick/github-tag-action@eca2b69f9e2c24be7decccd0f15fdb1ea5906598
