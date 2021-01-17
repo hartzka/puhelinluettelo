@@ -1,4 +1,6 @@
 # Puhelinluettelo
 CI/CD -app
 
-herokussa pyörivä sovellus: https://lychee-crisp-99897.herokuapp.com/
+Full Stack open 11.21-11.22
+
+heroku: https://lychee-crisp-99897.herokuapp.com/
