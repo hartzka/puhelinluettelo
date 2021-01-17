@@ -156,7 +156,7 @@ const App = () => {
         <Message message={message} />
         <Filter nameFilter={nameFilter} handle={handleNameFilterChange}/>
       
-      <h2>Add a new</h2>
+      <h2>Add a new contact</h2>
 
       <PersonForm 
         newName={newName}
