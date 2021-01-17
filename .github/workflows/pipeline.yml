@@ -16,14 +16,14 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: npm install
-        run: npm install
+      - name: yarn install
+        run: yarn install
       - name: lint
-        run: npm run lint
+        run: yarn run lint
       - name: build ui
-        run: npm run build:ui
+        run: yarn run build:ui
       - name: test
-        run: npm test
+        run: yarn test
       - name: Bump version and push tag
         if: ${{ !contains(join(toJson(github.event.commits.*.message)), '#skip') && github.event_name == 'push' }}
         uses: anothrNick/github-tag-action@eca2b69f9e2c24be7decccd0f15fdb1ea5906598
