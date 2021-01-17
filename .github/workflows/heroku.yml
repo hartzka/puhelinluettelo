@@ -19,5 +19,4 @@ jobs:
           heroku_app_name: "lychee-crisp-99897"
           heroku_email: "kai.hartzell@gmail.com"
           healthcheck: "https://lychee-crisp-99897.herokuapp.com/info"
-          checkstring: "Phonebook"
           rollbackonhealthcheckfailed: true

@@ -18,6 +18,8 @@ jobs:
           node-version: '12.x'
       - name: npm install
         run: npm install
+      - name: lint
+        run: npm run lint
       - name: build ui
         run: npm run build:ui
       - name: test
